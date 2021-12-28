@@ -20,6 +20,17 @@ export default function About() {
     >
       <h1>(A Bout)</h1>
 
+      <div className="mouse_scroll">
+        <div className="mouse">
+          <div className="wheel"></div>
+        </div>
+        <div>
+          <span className="m_scroll_arrows unu"></span>
+          <span className="m_scroll_arrows doi"></span>
+          <span className="m_scroll_arrows trei"></span>
+        </div>
+      </div>
+
       <p className="sub-text">
         Am I even finnished? Do I derserve to exist <br /> if I'm spelled
         improperly?
@@ -65,7 +76,7 @@ export default function About() {
         src="https://my.spline.design/glasscirclescopy-8e624d68ede96a09025b2b2540715290/"
         frameborder="0"
         width="100%"
-        height="100%"
+        height="500px"
       ></iframe> */}
       <div>{/* <Contents /> */}</div>
     </motion.div>

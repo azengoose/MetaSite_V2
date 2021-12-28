@@ -26,7 +26,10 @@ export default function Home() {
 
       <h1> &lt;MetaSite/&gt;</h1>
 
-      <p className="sub-text">Oh hello there</p>
+      <p className="sub-text">
+        Now, it'd be epic if transitions could change based on the history e.g.
+        Home -> Site (slide left), About &lt;- Home (right)
+      </p>
 
       {/* <Randompage /> */}
 
@@ -40,6 +43,10 @@ export default function Home() {
           world of old if I'm not updated. Whilst status quos get disrupted and
           good things can be lost, there is great opportunity for creative
           replacement. This sometimes results in things like variation.
+        </p>
+        <p>
+          I don't know what that above paragraph means, but it'd sure as hell be
+          useful to get all the other page content and general outline set up.
         </p>
       </div>
 
