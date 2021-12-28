@@ -4,20 +4,20 @@ import { Link } from "react-router-dom";
 // import Sound from "../components/sound";
 import { motion } from "framer-motion";
 
-const slidevar = {
-  initial: { x: 10000, opacity: 0 },
-  animate: { x: 0, opacity: 1 },
-  exit: { x: 10000, opacity: 0 }
+const variants = {
+  initial: { opacity: 0, x: 1000 },
+  animate: { opacity: 1, x: 0 },
+  exit: { opacity: 0, x: 1000 }
 };
 
 export default function Internet() {
   return (
     <motion.div
-      variants={slidevar}
+      variants={variants}
       initial="initial"
       animate="animate"
       exit="exit"
-      transition={{ duration: 1 }}
+      transition={{ ease: "easeInOut", duration: 0.7 }}
     >
       <h1>INT</h1>
       <p className="sub-text">Institute of Internet</p>

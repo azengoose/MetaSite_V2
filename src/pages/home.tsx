@@ -8,9 +8,9 @@ import { motion } from "framer-motion";
 //glitch intro for home https://codepen.io/team/nclud/pen/MwaGGE
 
 const variants = {
-  initial: { opacity: 0, x: -1000 },
-  animate: { opacity: 1, x: 0 },
-  exit: { opacity: 0, x: -1000 }
+  initial: { opacity: 0, y: -1000 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -1000 }
 };
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
       initial="initial"
       animate="animate"
       exit="exit"
-      transition={{ ease: "easeInOut", duration: 1 }}
+      transition={{ ease: "easeInOut", duration: 0.8 }}
     >
       <Browser />
 

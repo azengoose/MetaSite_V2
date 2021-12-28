@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 // import Contents from "../components/contents";
 
 const variants = {
-  initial: { opacity: 0 },
-  animate: { opacity: 1, transition: 2 },
-  exit: { opacity: 0 }
+  initial: { opacity: 0, x: -1000 },
+  animate: { opacity: 1, x: 0 },
+  exit: { opacity: 0, x: -1000 }
 };
 
 export default function About() {
@@ -16,7 +16,7 @@ export default function About() {
       initial="initial"
       animate="animate"
       exit="exit"
-      transition="transition"
+      transition={{ ease: "easeInOut", duration: 0.8 }}
     >
       <h1>(A Bout)</h1>
 

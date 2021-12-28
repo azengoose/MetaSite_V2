@@ -6,6 +6,7 @@ import "./styles/styles.css";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Internet from "./pages/internet";
+import NotFound from "./pages/not";
 
 export default function App() {
   const location = useLocation();
@@ -31,9 +32,10 @@ export default function App() {
           </div>
           <AnimatePresence exitBeforeEnter>
             <Routes location={location} key={location.pathname}>
+              <Route path="/" element={<Home />} />
               <Route path="/a" element={<About />} />
               <Route path="/i" element={<Internet />} />
-              <Route path="/" element={<Home />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </AnimatePresence>
         </div>
