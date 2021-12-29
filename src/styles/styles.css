@@ -138,16 +138,27 @@ h1 {
   text-align: center;
   margin-top: -20px;
 }
-.right-arrow {
+
+.arrow {
   position: absolute;
-  right: 5%;
   border: none;
+  background: none;
+  z-index: 2;
+  fill: #2800ff;
+  padding: 50px 10px;
+}
+.arrow:hover {
+  cursor: pointer;
+}
+
+.right-arrow {
+  right: 3%;
+  padding-left: 20px;
 }
 
 .left-arrow {
-  position: absolute;
-  left: 5%;
-  border: none;
+  left: 3%;
+  padding-right: 20px;
 }
 
 /* Siteception */

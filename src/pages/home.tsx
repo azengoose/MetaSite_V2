@@ -27,8 +27,8 @@ export default function Home() {
       <h1> &lt;MetaSite/&gt;</h1>
 
       <p className="sub-text">
-        Now, it'd be epic if transitions could change based on the history e.g.
-        Home -> Site (slide left), About &lt;- Home (right)
+        Every page needs button-links which transfer an animation to the current
+        and linked page.
       </p>
 
       {/* <Randompage /> */}
