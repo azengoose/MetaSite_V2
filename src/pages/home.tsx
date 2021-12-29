@@ -4,6 +4,12 @@ import Browser from "../components/browser";
 // import Randompage from "../components/randompage";
 // import ButtonChange from "../components/buttonchange";
 import { motion } from "framer-motion";
+import {
+  RightArrow,
+  LeftArrow,
+  DownArrow,
+  UpArrow
+} from "../components/arrows";
 
 //glitch intro for home https://codepen.io/team/nclud/pen/MwaGGE
 
@@ -23,6 +29,11 @@ export default function Home() {
       transition={{ ease: "easeInOut", duration: 0.8 }}
     >
       <Browser />
+
+      <RightArrow link="/i" />
+      <LeftArrow link="/a" />
+
+      <UpArrow />
 
       <h1> &lt;MetaSite/&gt;</h1>
 
@@ -51,6 +62,9 @@ export default function Home() {
       </div>
 
       {/* <Contents /> */}
+      <div style={{ height: 100 }}>
+        <DownArrow />
+      </div>
     </motion.div>
   );
 }

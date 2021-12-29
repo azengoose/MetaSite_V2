@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const variants = {
@@ -7,57 +7,55 @@ const variants = {
   tap: { scale: 0.9 }
 };
 
-export function RightArrow() {
-  let navigate = useNavigate();
-  function goToNextPage() {
-    navigate(1);
-  }
-
+export function RightArrow(props) {
   return (
     <>
-      <motion.button
-        variants={variants}
-        whileHover="hover"
-        whileTap="tap"
-        className="right-arrow arrow"
-        onClick={goToNextPage}
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
+      <Link to={props.link}>
+        <motion.button
+          variants={variants}
+          whileHover="hover"
+          whileTap="tap"
+          className="right-arrow arrow"
         >
-          <path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" />
-        </svg>
-      </motion.button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" />
+          </svg>
+        </motion.button>
+      </Link>
     </>
   );
 }
 
-export function LeftArrow() {
+export function LeftArrow(props2) {
   let navigate = useNavigate();
   function goToPreviousPage() {
     navigate(-1);
   }
   return (
     <>
-      <motion.button
-        variants={variants}
-        whileHover="hover"
-        whileTap="tap"
-        className="left-arrow arrow"
-        onClick={goToPreviousPage}
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
+      <Link to={props2.link}>
+        <motion.button
+          variants={variants}
+          whileHover="hover"
+          whileTap="tap"
+          className="left-arrow arrow"
+          onClick={goToPreviousPage}
         >
-          <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
-        </svg>{" "}
-      </motion.button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
+          </svg>{" "}
+        </motion.button>
+      </Link>
     </>
   );
 }

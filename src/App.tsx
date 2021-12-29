@@ -1,14 +1,12 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Routes, Route, Link, useLocation } from "react-router-dom";
 import "./styles/styles.css";
-import { useState } from "react";
 
 import Home from "./pages/home";
 import About from "./pages/about";
 import Internet from "./pages/internet";
 import NotFound from "./pages/not";
 
-import { RightArrow, LeftArrow, DownArrow, UpArrow } from "./components/arrows";
 import Progress from "./components/progress";
 
 export default function App() {
@@ -40,15 +38,14 @@ export default function App() {
       <main role="main" className="wrapper">
         <div className="content">
           <Progress />
-          <RightArrow />
-          <LeftArrow />
+
           <div>
             <nav>
-              <ul>
-                <li className="App-link">
+              <ul style={{ display: "flex", flexDirection: "row" }}>
+                <li className="App-link" style={{ paddingRight: 25 }}>
                   <Link to="/">Home</Link>
                 </li>
-                <li className="App-link">
+                <li className="App-link" style={{ paddingRight: 25 }}>
                   <Link to="/a">About</Link>
                 </li>
                 <li className="App-link">

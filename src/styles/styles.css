@@ -150,15 +150,22 @@ h1 {
 .arrow:hover {
   cursor: pointer;
 }
-
 .right-arrow {
   right: 3%;
   padding-left: 20px;
 }
-
 .left-arrow {
   left: 3%;
   padding-right: 20px;
+}
+.down-arrow {
+  bottom: 0;
+  position: relative;
+  left: 50%;
+}
+.up-arrow {
+  top: 0;
+  left: 47vw;
 }
 
 /* Siteception */
@@ -390,10 +397,10 @@ a:hover + .ihoverbox,
 /*Circle */
 .progress-icon {
   position: fixed;
-  top: 20px;
-  left: 20px;
-  width: 120px;
-  height: 120px;
+  width: 70px;
+  height: 70px;
+  left: 10px;
+  top: 10px;
 }
 
 @media (max-width: 600px) {
