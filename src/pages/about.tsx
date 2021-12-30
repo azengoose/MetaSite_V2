@@ -2,6 +2,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 // import Contents from "../components/contents";
+import { RightArrow } from "../components/arrows";
 
 const variants = {
   initial: { opacity: 0, x: -1000 },
@@ -18,6 +19,7 @@ export default function About() {
       exit="exit"
       transition={{ ease: "easeInOut", duration: 0.8 }}
     >
+      <RightArrow link="/" />
       <h1>(A Bout)</h1>
 
       <div className="mouse_scroll">
@@ -62,6 +64,20 @@ export default function About() {
           </a>
           , a place where people put their code. I'm definitely not at all
           associated with that Github account btw
+        </p>
+      </div>
+      <div>
+        <h2>Change and Variation</h2>
+        <p>
+          The world constantly undergoes change, as per the second law of
+          Thermodynamics, but especially with technology. So I'll be lost in the
+          world of old if I'm not updated. Whilst status quos get disrupted and
+          good things can be lost, there is great opportunity for creative
+          replacement. This sometimes results in things like variation.
+        </p>
+        <p>
+          I don't know what that above paragraph means, but it'd sure as hell be
+          useful to get all the other page content and general outline set up.
         </p>
       </div>
       {/* <iframe

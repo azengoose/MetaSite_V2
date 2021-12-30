@@ -3,6 +3,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 // import Sound from "../components/sound";
 import { motion } from "framer-motion";
+import { LeftArrow } from "../components/arrows"
 
 const variants = {
   initial: { opacity: 0, x: 1000 },
@@ -19,6 +20,7 @@ export default function Internet() {
       exit="exit"
       transition={{ ease: "easeInOut", duration: 0.7 }}
     >
+      <LeftArrow link="/"/>
       <h1>INT</h1>
       <p className="sub-text">Institute of Internet</p>
 
