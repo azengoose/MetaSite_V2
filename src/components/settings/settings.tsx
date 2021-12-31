@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "../../styles/settings.css";
 import Fullscreen from "./fullscreen";
+import Timer from "../timer";
 
 export default function Settings() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -72,6 +73,7 @@ export default function Settings() {
           </h2>
           <p>For tweaks and site customisations.</p>
           <Fullscreen />
+          <button className="btn--cool">Speedrun Mode</button>
           <button onClick={handleClose}>Close</button>
         </motion.div>
       </Backdrop>
@@ -85,7 +87,22 @@ export default function Settings() {
         exitBeforeEnter={true}
         onExitComplete={() => null}
       >
+        <div
+          style={{
+            display: modalOpen ? "block" : "none",
+            color: "white",
+            top: "6rem",
+            position: "fixed",
+            zIndex: 4,
+            textAlign: "center"
+          }}
+        >
+          <p style={{}}>Time elapsed on MetaSite:</p>
+          <Timer />
+        </div>
+
         {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} />}
+
         <div>
           <motion.button
             whileHover={{ scale: 1.1 }}

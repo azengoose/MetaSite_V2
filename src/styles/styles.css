@@ -145,27 +145,27 @@ h1 {
   background: none;
   z-index: 2;
   fill: #2800ff;
-  padding: 50px 10px;
+  padding: 10px 10px;
 }
 .arrow:hover {
   cursor: pointer;
 }
 .right-arrow {
+  top: 40%;
   right: 3%;
   padding-left: 20px;
 }
 .left-arrow {
+  top: 40%;
   left: 3%;
   padding-right: 20px;
 }
 .down-arrow {
-  bottom: 0;
-  position: relative;
-  left: 50%;
+  left: 47%;
 }
 .up-arrow {
-  top: 0;
-  left: 47vw;
+  top: 2%;
+  left: 47%;
 }
 
 /* Siteception */
