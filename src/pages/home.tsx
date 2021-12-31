@@ -21,6 +21,7 @@ export default function Home() {
 
   function handleClick() {
     setExit({ opacity: 0, x: -500 });
+    console.log(RightArrow);
   }
 
   var variants = {
@@ -39,9 +40,8 @@ export default function Home() {
     >
       <Browser />
 
-      <button onClick={handleClick}>
-        {" "}
-        <RightArrow link="/i"></RightArrow>
+      <button className="right-arrow arrow" onClick={handleClick}>
+        <RightArrow link="/i" />
       </button>
       <LeftArrow link="/a" />
 
@@ -50,7 +50,8 @@ export default function Home() {
       <h1> &lt;MetaSite/&gt;</h1>
 
       <p className="sub-text">
-        Arrow component handles click. Passes exit prop up to parent motion div
+        Now just seeing if we can run an exit animation, but otherwise putting
+        in demo content.
       </p>
 
       {/* <Randompage /> */}

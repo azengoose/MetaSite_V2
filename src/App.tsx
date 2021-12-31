@@ -9,6 +9,7 @@ import Practical from "./pages/pract";
 import NotFound from "./pages/not";
 
 import Progress from "./components/progress";
+import Settings from "./components/settings/settings";
 
 export default function App() {
   const location = useLocation();
@@ -18,6 +19,7 @@ export default function App() {
       <main role="main" className="wrapper">
         <div className="content">
           <Progress />
+          <Settings />
           <AnimatePresence exitBeforeEnter>
             <Routes location={location} key={location.pathname}>
               <Route

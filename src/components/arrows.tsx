@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -7,22 +7,22 @@ const variants = {
   tap: { scale: 0.9 }
 };
 
+// function RightClick() {
+//   const [exit, setExit] = useState({ opacity: 0, x: 0 });
+//   setExit({ opacity: 0, x: -500 });
+//   return (exit)
+// }
+
 export function RightArrow(props) {
-  const [exit, setExit] = useState({ opacity: 0, x: 0 });
-
-  function handleClick() {
-    setExit({ opacity: 0, x: -500 });
-  }
-
   return (
     <>
       <Link to={props.link}>
-        <motion.button
+        <motion.div
           variants={variants}
           whileHover="hover"
           whileTap="tap"
           className="right-arrow arrow"
-          onClick={handleClick}
+          // onClick={RightClick}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@ export function RightArrow(props) {
           >
             <path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" />
           </svg>
-        </motion.button>
+        </motion.div>
       </Link>
     </>
   );
