@@ -26,7 +26,7 @@ export default function Design() {
     setClicked(true);
   }
   const Disappear = {
-    display: clicked ? "none" : "block"
+    opacity: clicked ? 0 : 1
   };
   var variants = {
     initial: initial,
@@ -43,11 +43,7 @@ export default function Design() {
         exit="exit"
         transition={{ ease: "easeInOut", duration: 0.8 }}
       >
-        <button
-          className="up-arrow arrow"
-          onClick={handleClickUp}
-          style={Disappear}
-        >
+        <button className="arrow-btn" onClick={handleClickUp} style={Disappear}>
           <UpArrow link="/" />
         </button>
 
@@ -113,14 +109,10 @@ export default function Design() {
           (Attempting to grapple and consider matters both public and prviate)
           &mdash; (Apathy towards controversy)
         </p>
-        <button
-          className="down-arrow arrow"
-          onClick={handleClickDown}
-          style={Disappear}
-        >
-          <DownArrow link="/" />
-        </button>
       </motion.div>
+      <button className="arrow-btn" onClick={handleClickDown} style={Disappear}>
+        <DownArrow link="/" />
+      </button>
     </>
   );
 }

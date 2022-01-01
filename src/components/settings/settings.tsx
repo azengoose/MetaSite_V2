@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 import "../../styles/settings.css";
 import Fullscreen from "./fullscreen";
 import Timer from "../timer";
@@ -72,6 +73,9 @@ export default function Settings() {
             </svg>
           </h2>
           <p>For tweaks and site customisations.</p>
+          <Link className="btn--cool" to="/hello" onClick={handleClose}>
+            Exit to Title
+          </Link>
           <Fullscreen />
           <button className="btn--cool">Speedrun Mode</button>
           <button onClick={handleClose}>Close</button>
@@ -97,8 +101,10 @@ export default function Settings() {
             textAlign: "center"
           }}
         >
-          <p style={{}}>Time elapsed on MetaSite:</p>
-          <Timer />
+          <p>Time elapsed on MetaSite:</p>
+          <div style={{ color: "red" }}>
+            <Timer />
+          </div>
         </div>
 
         {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} />}

@@ -13,6 +13,7 @@ import {
 } from "../components/arrows";
 
 //glitch intro for home https://codepen.io/team/nclud/pen/MwaGGE
+//can be refactored top-level for <motion><content></motion
 
 export default function Home() {
   const [initial] = useState({ opacity: 0, x: 0 });
@@ -36,7 +37,7 @@ export default function Home() {
     setClicked(true);
   }
   const Disappear = {
-    display: clicked ? "none" : "block"
+    opacity: clicked ? "0" : "1"
   };
   var variants = {
     initial: initial,
@@ -52,38 +53,32 @@ export default function Home() {
         animate="animate"
         exit="exit"
         transition={{ ease: "easeInOut", duration: 0.8 }}
-        style={{ height: "70vh", marginTop: "10vh" }}
       >
-        <Browser />
-
         <button
-          className="right-arrow arrow"
+          className="arrow-btn"
+          onClick={() => handleClick("up")}
+          style={Disappear}
+        >
+          <UpArrow link="/a" />
+        </button>
+        <button
+          className="up-arrow-btn"
           onClick={() => handleClick("right")}
           style={Disappear}
         >
           <RightArrow link="/i" />
         </button>
         <button
-          className="left-arrow arrow"
+          className="arrow-btn"
           onClick={() => handleClick("left")}
           style={Disappear}
         >
-          <LeftArrow link="/a" />
+          <LeftArrow link="/w" />
         </button>
-        <button
-          className="up-arrow arrow"
-          onClick={() => handleClick("up")}
-          style={Disappear}
-        >
-          <UpArrow link="/p" />
-        </button>
+
+        <Browser />
 
         <h1> &lt;MetaSite/&gt;</h1>
-
-        <p className="sub-text">
-          Now just seeing if we can run an exit animation, but otherwise putting
-          in demo content.
-        </p>
 
         {/* <Randompage /> */}
 
@@ -91,13 +86,16 @@ export default function Home() {
 
         {/* <Contents /> */}
       </motion.div>
-      <button
-        className="down-arrow arrow"
-        onClick={() => handleClick("down")}
-        style={Disappear}
-      >
-        <DownArrow link="/d" />
-      </button>
+
+      <div className="arrow-footer">
+        <button
+          className="arrow-btn"
+          onClick={() => handleClick("down")}
+          style={Disappear}
+        >
+          <DownArrow link="/d" />
+        </button>
+      </div>
     </>
   );
 }

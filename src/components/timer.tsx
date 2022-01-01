@@ -27,7 +27,9 @@ export default function Timer() {
 
   return (
     <div>
-      <h2>{seconds}</h2>
+      <h2 style={{ left: "30%", top: "60%", position: "absolute" }}>
+        {seconds}
+      </h2>
       {/* <button onClick={toggle}>{isActive ? "Pause" : "Start"}</button>
       <button className="btn--cool" onClick={reset}>
         Reset
