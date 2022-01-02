@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import "../../styles/settings.css";
+
 import Fullscreen from "./fullscreen";
 import Timer from "../timer";
 
