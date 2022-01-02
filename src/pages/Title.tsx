@@ -8,13 +8,13 @@ export default function Title() {
     <>
       <motion.div
         className="background"
-        initial={{ opacity: 0, x: -74 }}
+        initial={{ opacity: 0, x: -24 }}
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0.9, y: [0, -30, -35, -40 - 800] }}
         transition={{
           duration: 2,
           ease: "easeInOut",
-          time: [0, 0.1, 0.15, 0.2, 1.8]
+          time: [0, 1, 1.05, 1.2, 1.8]
         }}
       >
         <div className="title-content">

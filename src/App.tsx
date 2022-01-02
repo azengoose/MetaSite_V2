@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Paths from "./router";
 import "./styles/styles.css";
+import "./styles/arrows.css";
 
 import Progress from "./components/progress";
 import Settings from "./components/settings/settings";

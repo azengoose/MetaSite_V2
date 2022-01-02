@@ -7,8 +7,10 @@ import Home from "./pages/home";
 import Site from "./pages/site";
 import WebsiteDemo from "./pages/website/website";
 import About from "./pages/about";
+import Medium from "./pages/medium";
 import Internet from "./pages/internet";
 import Practical from "./pages/pract";
+import Critical from "./pages/crit";
 import Design from "./pages/design";
 import NotFound from "./pages/not";
 
@@ -24,8 +26,10 @@ export default function Paths() {
           <Route path="/a" element={<About />} />
           <Route path="/w" element={<Site />} />
           <Route path="/demo" element={<WebsiteDemo />} />
+          <Route path="/m" element={<Medium />} />
           <Route path="/i" element={<Internet />} />
           <Route path="/p" element={<Practical />} />
+          <Route path="/c" element={<Critical />} />
           <Route path="/d" element={<Design />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -55,18 +55,18 @@ export default function Home() {
         transition={{ ease: "easeInOut", duration: 0.8 }}
       >
         <button
-          className="arrow-btn"
+          className="arrow-btn up"
           onClick={() => handleClick("up")}
           style={Disappear}
         >
           <UpArrow link="/a" />
         </button>
         <button
-          className="up-arrow-btn"
+          className="arrow-btn"
           onClick={() => handleClick("right")}
           style={Disappear}
         >
-          <RightArrow link="/i" />
+          <RightArrow link="/m" />
         </button>
         <button
           className="arrow-btn"
@@ -79,6 +79,10 @@ export default function Home() {
         <Browser />
 
         <h1> &lt;MetaSite/&gt;</h1>
+        <p className="sub-text">This is a demo.</p>
+        <p style={{ textAlign: "center", marginTop: -15 }}>
+          More information upwards.
+        </p>
 
         {/* <Randompage /> */}
 
@@ -93,7 +97,7 @@ export default function Home() {
           onClick={() => handleClick("down")}
           style={Disappear}
         >
-          <DownArrow link="/d" />
+          <DownArrow link="/c" />
         </button>
       </div>
     </>

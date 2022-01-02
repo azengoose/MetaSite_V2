@@ -32,7 +32,7 @@ export default function Settings() {
         className="backdrop"
         variants={fade}
         initial="hidden"
-        animate={{ opacity: 0.98 }}
+        animate={{ opacity: 1 }}
         exit="exit"
       >
         {children}
@@ -72,13 +72,20 @@ export default function Settings() {
               <circle cx="12" cy="12" r="3"></circle>
             </svg>
           </h2>
-          <p>For tweaks and site customisations.</p>
+          <p>For tweaks and site customisations. Other options in progress.</p>
           <Link className="btn--cool" to="/hello" onClick={handleClose}>
             Exit to Title
           </Link>
-          <Fullscreen />
-          <button className="btn--cool">Speedrun Mode</button>
-          <button onClick={handleClose}>Close</button>
+          {/* <Fullscreen />
+          <button className="btn--cool">Speedrun Mode</button> */}
+          <motion.button
+            className="close-btn"
+            onClick={handleClose}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9, rotate: 1 }}
+          >
+            Close
+          </motion.button>
         </motion.div>
       </Backdrop>
     );
@@ -88,7 +95,7 @@ export default function Settings() {
     <>
       <AnimatePresence
         initial={false}
-        exitBeforeEnter={true}
+        exitBeforeEnter
         onExitComplete={() => null}
       >
         <div
@@ -102,7 +109,7 @@ export default function Settings() {
           }}
         >
           <p>Time elapsed on MetaSite:</p>
-          <div style={{ color: "red" }}>
+          <div style={{ color: "#f1476a" }}>
             <Timer />
           </div>
         </div>
@@ -112,7 +119,7 @@ export default function Settings() {
         <div>
           <motion.button
             whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
+            whileTap={{ scale: 0.9, rotate: 5 }}
             className="settings-button"
             onClick={() => (modalOpen ? close() : open())}
           >
