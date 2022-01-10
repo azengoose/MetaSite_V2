@@ -14,9 +14,9 @@ export default function Timer() {
   }
 
   useEffect(() => {
-    let timer = null;
+    let timer = 0;
     if (isActive) {
-      timer = setInterval(() => {
+      timer = window.setInterval(() => {
         setSeconds((seconds) => Math.round((seconds + 0.01) * 1000) / 1000);
       }, 10);
     } else {

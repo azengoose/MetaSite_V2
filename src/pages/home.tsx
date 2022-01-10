@@ -78,7 +78,7 @@ export default function Home() {
 
         <Browser />
 
-        <h1> &lt;MetaSite/&gt;</h1>
+        <h1 className="home-title"> &lt;MetaSite/&gt;</h1>
         <p className="sub-text">This is a demo.</p>
         <p style={{ textAlign: "center", marginTop: -15 }}>
           More information upwards.

@@ -12,7 +12,7 @@ export default function Site() {
   const [clicked, setClicked] = useState(false);
 
   function handleClickRight() {
-    setExit({ opacity: 0, x: -500, y: 0 });
+    setExit({ opacity: 0, x: -900, y: 0 });
     setClicked(true);
   }
   function handleClickLeft() {

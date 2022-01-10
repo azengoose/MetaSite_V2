@@ -1,12 +1,52 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import { RightArrow, DownArrow } from "../components/arrows";
+import { motion } from "framer-motion";
 
 export default function About() {
+  const [initial] = useState({ opacity: 0, x: 0 });
+  var animate = { opacity: 1 };
+  const [exit, setExit] = useState({ opacity: 0, x: 0, y: 0 });
+  const [clicked, setClicked] = useState(false);
+
+  function handleClick(direction) {
+    if (direction === "right") {
+      setExit({ opacity: 0, x: -1000, y: 0 });
+    }
+    if (direction === "left") {
+      setExit({ opacity: 0, x: 1000, y: 0 });
+    }
+    if (direction === "up") {
+      setExit({ opacity: 0, x: 0, y: 500 });
+    }
+    if (direction === "down") {
+      setExit({ opacity: 0, x: 0, y: -500 });
+    }
+    setClicked(true);
+  }
+  const Disappear = {
+    opacity: clicked ? "0" : "1"
+  };
+  var variants = {
+    initial: initial,
+    animate: animate,
+    exit: exit
+  };
   return (
     <>
-      <div>
-        <RightArrow link="/p" />
+      <motion.div
+        variants={variants}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        transition={{ ease: "easeInOut", duration: 0.8 }}
+      >
+        <button
+          className="arrow-btn"
+          onClick={() => handleClick("right")}
+          style={Disappear}
+        >
+          <RightArrow link="/p" />
+        </button>
         <div className="content-space">
           <h1 className="h1-space">MetaSite Meta</h1>
           <h2>About the Site</h2>
@@ -78,8 +118,13 @@ export default function About() {
             years.
           </p>
         </div>
-      </div>
-      <button className="arrow-btn">
+      </motion.div>
+      <button
+        className="arrow-btn"
+        onClick={() => handleClick("down")}
+        style={Disappear}
+      >
+        {" "}
         <DownArrow link="/" />
       </button>
     </>
