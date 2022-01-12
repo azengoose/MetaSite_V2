@@ -1,6 +1,6 @@
 # MetaSite Demo
 
-\Has **absolutely zilch** affiliation with Meta or the """""_Metaverse_"""""
+Has **absolutely zilch** affiliation with Meta or the """""_Metaverse_"""""
 
 MetaSite is a site that tries to be meta. Not too meta though – just a little bit.
 
@@ -15,4 +15,3 @@ Some ideas explored include:
 - websites (duh)
 - media
 - nothing else, this is a demo.
-
