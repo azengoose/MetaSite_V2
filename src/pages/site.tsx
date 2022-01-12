@@ -44,42 +44,37 @@ export default function Site() {
         >
           <RightArrow link="/" />
         </button>
-        <div className="h1-space">
-          <h1>Websites</h1>
-        </div>
-        <p className="sub-text">
-          The page on websites on the Website about websites.
-        </p>
+
         <div className="content-space">
-          <p>
-            As there is a vast variation of sites, primarily in terms of
-            content, but also sometimes with form and structure, the function
-            and purpose of a website should be made pretty immediately clear to
-            site visitors &ndash; through the domain name, through a clear
-            landing page, hero section and meta tags (for search engines).
+          <h1 className="h1-space">Websites</h1>
+
+          <p className="sub-text">
+            This is the obligatory page explicity about websites on the website
+            about websites.
           </p>
-          <p>
-            Content aside, the underlying anatomy of a website remains pretty
-            similar bar experimental sites. The clearest difference when
-            interacting with digital sites is the ability of interaction, though
-            we are limited to generally 2D screens.
-          </p>
+          <h2 className="h2-body"> Introduction</h2>
           <p>
             The magical thing about code, software, to any type of engineering:
-            the sky&rsquo;s not the limit.
+            the sky&rsquo;s <em>not</em> the limit.
           </p>
-          <hr></hr>
           <p>
-            Websites can be separated via content (dynamic/changing,
-            user-created) and function (generally unchanging,
-            developer-created).
+            Engineers, and in this case, website owners and designers, have the
+            privilege and responsibility to perform amazing and novel feats
+            within their moral bounds.
           </p>
+          <h2 className="h2-body"> Website Taxonomy </h2>
           <p>
             I&rsquo;ll spare you an awful attempt at categorising the entirety
             of human created content, but the functions of sites can be a more
             manageable affair.
           </p>
-          <p>Website functions include:</p>
+          <p>
+            Simply, websites can be separated via content (dynamic/changing,
+            user-created) and function (generally unchanging,
+            developer-created).
+          </p>
+
+          <p>Current website functions include:</p>
           <ol>
             <li>
               Information, documentation, news, opinion, entertainment, art,
@@ -112,7 +107,7 @@ export default function Site() {
               </ul>
             </li>
             <li>
-              Tools for creation &ndash; platform for users.
+              Tools for creation &ndash; platforms for users.
               <ul>
                 <li>Website makers, music boxes, slides, writing software</li>
               </ul>
@@ -128,8 +123,7 @@ export default function Site() {
             illustrated above. But it&rsquo;s worth considering the primary
             functions of sites whether as creators or users of sites.
           </p>
-          <hr></hr>
-          <p>Some of the practical uses of websites include:</p>
+          <h2 className="h2-body">Practical Uses</h2>
           <ol>
             <li>
               Businesses. Websites for businesses or companies in the mid-early
@@ -138,7 +132,7 @@ export default function Site() {
             </li>
             <li>
               E-commerce, selling digital products, merchandise, physical goods;
-              generating revenue via ads and affiliates
+              generating revenue via ads and affiliates for example.
             </li>
             <li>
               Your resum&eacute;. Websites are your personal resume; that, or a
@@ -152,11 +146,12 @@ export default function Site() {
               for them, you can create value for others.
             </li>
           </ol>
-          <div className="center">
+          <p></p>
+          {/* <div className="center">
             <Link to="/demo" className="btn--cool">
-              Unfinished Website Demo
+              Website Site Demo
             </Link>
-          </div>
+          </div> */}
         </div>
       </motion.div>
     </>

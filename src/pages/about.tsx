@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { RightArrow, DownArrow } from "../components/arrows";
+import { UpArrow, RightArrow, DownArrow } from "../components/arrows";
 import { motion } from "framer-motion";
 
 export default function About() {
@@ -31,6 +31,16 @@ export default function About() {
     animate: animate,
     exit: exit
   };
+  // function to send external links to new tab
+  function externalLinks() {
+    var anchors = document.querySelectorAll("a");
+    for (var i = 0; i < anchors.length; i++) {
+      if (anchors[i].hostname !== window.location.hostname) {
+        anchors[i].setAttribute("target", "_blank");
+      }
+    }
+  }
+  externalLinks();
   return (
     <>
       <motion.div
@@ -42,80 +52,62 @@ export default function About() {
       >
         <button
           className="arrow-btn"
+          onClick={() => handleClick("up")}
+          style={Disappear}
+        >
+          <UpArrow link="/l" />
+        </button>
+        <button
+          className="arrow-btn"
           onClick={() => handleClick("right")}
           style={Disappear}
         >
           <RightArrow link="/p" />
         </button>
         <div className="content-space">
-          <h1 className="h1-space">MetaSite Meta</h1>
-          <h2>About the Site</h2>
+          <h1 className="h1-space">About</h1>
+          <p className="sub-text">This About page is MetaSite meta. </p>
+          <h2 className="h2-body">Introduction</h2>
+          <p>Hello and warmest welcome to this cosy nook of the internet.</p>
+          <p>I am a website. Howdy.</p>
           <p>
-            I am a <strong>Website</strong>. Some digital space that, in short,
-            loads pages stored somewhere for you, &lsquo;cos you entered the
-            link.
-          </p>
-          <p>
-            If you want to see my internal workings, you can{" "}
+            If you wish to take a little peek at my internals, feel free to{" "}
             <a href="https://www.thoughtco.com/get-inspect-element-tool-for-browser-756549">
               inspect element
             </a>
-            , or see the source files that make me up on{" "}
-            <a href="https://github.com/azengoose/Glitchtest">GitHub</a>, the
-            code place that you keep hearing about if you know a techy person.
-            It&rsquo;s like pornhub, but for code. I&rsquo;m not at all
-            associated with the user of that Github account btw.
+            , or waltz on over to my source files on{" "}
+            <a href="https://github.com/azengoose/MetaSite_V2">GitHub</a>. It's
+            like pornhub, but for code. If you're a minor, ignore that.
           </p>
-          <hr></hr>
+          <h2 className="h2-body"> Aims</h2>
           <p>
-            The world constantly undergoes change, as per the second law of
-            Thermodynamics, but especially with technology. So I&apos;ll be lost
-            in the world of old if I&apos;m not updated. Whilst status quos get
-            disrupted and good things can be lost, there is great opportunity
-            for creative replacement, innovation and variation.
+            An aim of MetaSite is to provoke critical connections between people
+            and technology, or more generally, establish a holistic view of the
+            web through an experimental, reflective website about websites.
           </p>
-          <hr></hr>
           <p>
-            The aim of MetaSite is to provoke critical connections between
-            people and technology, or more generally, establish a holistic view
-            of websites and where sites extend, through an experimental,
-            reflective website about websites.
+            The Mission Question of MetaSite:
+            <em> What is the web?</em>
           </p>
-          <p>The primary-directing Mission Question of MetaSite:</p>
-          <blockquote>
-            <p>What is the essence of the online medium?</p>
-          </blockquote>
-          <p>
-            [Translation Elaboration to actual English]: How can and should
-            online media, such as websites, be used and created? How do sites
-            service human needs?
-          </p>
-          <hr></hr>
-          <p>
-            This website was largely a result of a series of
-            self-online-directed learning by my creator and the desire to
-            experiment. Site experiments include:
-          </p>
+          <p>This site is largely experimental. Site experiments include:</p>
           <ol>
-            <li>Four-way navigation</li>
+            <li>Spatial navigation</li>
             <li>Learning via questioning</li>
             <li>Experiential reading and thinking</li>
           </ol>
           <p>
-            The four main faces of this site: practicality, critique, science
-            and people. This site is currently a demo. Distillation of your
-            thoughts into writing for MetaSite will probably be appreciated.
-            Currently in development:
+            This site is currently a demo. Some of the pages located in this
+            demo illustrate the outline of potential pages currently in
+            development. Other ideas:{" "}
           </p>
           <ul>
-            <li>Levels of Practicality</li>
-            <li>Institute of Internet</li>
             <li>About About</li>
             <li>Frequently Said Answers (FSA)</li>
           </ul>
           <p style={{ paddingBottom: 0, marginBottom: 0 }}>
-            And more. Support for the site will only be accepted after ten
-            years.
+            Distillation of your thoughts into writing for MetaSite will
+            probably be appreciated. You can leave feedback by navigating
+            upwards.
           </p>
         </div>
       </motion.div>

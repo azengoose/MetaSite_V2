@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import { UpArrow } from "../components/arrows";
+import { UpArrow, RightArrow, DownArrow } from "../components/arrows";
 import { motion } from "framer-motion";
+import Survey from "../components/survey";
 
-export default function Critical() {
+export default function Learn() {
   const [initial] = useState({ opacity: 0, x: 0 });
   var animate = { opacity: 1 };
   const [exit, setExit] = useState({ opacity: 0, x: 0, y: 0 });
   const [clicked, setClicked] = useState(false);
+
   function handleClick(direction) {
     if (direction === "right") {
       setExit({ opacity: 0, x: -1000, y: 0 });
@@ -39,27 +41,22 @@ export default function Critical() {
         exit="exit"
         transition={{ ease: "easeInOut", duration: 0.8 }}
       >
-        <h1>Criticality</h1>
-        <p className="sub-text">
-          The only thing I want for Christmas is...
-          <br></br>critical thinking.
-        </p>
+        <h2 className="h2-body">Secret survey page</h2>
         <p>
-          Disappointed? Well, I want to hold off from publishing too much
-          unfiltered and poorly edited work. This page, among many others in
-          this ouevre, <em>excusi moi</em>, include:
+          If you would be the kindest and drop some of your best feedback,
+          you'll be a cool kid.
         </p>
-        <li>Bugs and Features</li>
-        <li>Institute of Internet</li>
-        <li>Tech Design and Decision</li>
+        <Survey />
+      </motion.div>
+      <div className="arrow-footer">
         <button
-          className="arrow-btn up"
-          onClick={() => handleClick("up")}
+          className="arrow-btn"
+          onClick={() => handleClick("down")}
           style={Disappear}
         >
-          <UpArrow link="/" />
+          <DownArrow link="/a" />
         </button>
-      </motion.div>
+      </div>
     </>
   );
 }

@@ -47,10 +47,20 @@ export default function Practical() {
         >
           <LeftArrow link="/a" />
         </button>
-        <h1>Practicality</h1>
-        <li>Levels of practicality</li>
-        <li>Types and uses of sites</li>
-        <li>Parts of a website + demo</li>
+        <div className="content-space">
+          <h1 className="h1-space">Practicality</h1>
+          <p className="sub-text">How is this practical?</p>
+          <p>
+            Merry Christmas. This page is an illustration of how pages might
+            connect in this navigation system. It is also a placeholder, a work
+            in progress, a fledgling chick either on the cusp of maturing into a
+            magnificently feathered vertebrate ...or on the cusp of falling off
+            a very high cliff. Some current ideas in movement:
+          </p>
+          <li>Levels of Practicality</li>
+          <li>Discomfort and Failure</li>
+          <li>Limits of Writing</li>
+        </div>
       </motion.div>
 
       <div className="arrow-footer">

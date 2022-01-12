@@ -8,7 +8,7 @@
   padding-top: 2px;
   width: 26px;
   height: 26px;
-  fill: rgb(255, 235, 199);
+  fill: rgb(250, 206, 219);
 }
 .settings-button {
   position: absolute;
@@ -91,6 +91,6 @@
   .settings-icon {
     width: 30px;
     height: 30px;
-    margin-top: 3px;
+    margin-top: 1px;
   }
 }

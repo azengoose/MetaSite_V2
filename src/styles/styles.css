@@ -68,7 +68,7 @@
   margin-bottom: 20px;
 }
 .btn--cool:hover {
-  background-color: #d0fff1;
+  background-color: #eafff9;
 }
 /* Navigation grid */
 .footer {
@@ -110,6 +110,7 @@ body {
   background: var(--bg-grad);
   margin: 1rem;
   font-size: 1.09rem;
+  line-height: 1.5rem;
 }
 .wrapper {
   min-height: var(--wrapper-height);
@@ -143,6 +144,20 @@ h1 {
 .h1-space {
   margin-top: 20%;
 }
+.h2-body {
+  text-align: center;
+  color: rgb(68, 0, 255);
+  padding: 9px 0 7px 0;
+}
+.h2-body:after {
+  background-color: rgb(255, 0, 0);
+  content: "";
+  display: block;
+  height: 0.5px;
+  margin: 0 120px;
+  opacity: 0.2;
+  overflow: hidden;
+}
 
 hr {
   border: 1px solid white;
@@ -169,6 +184,7 @@ blockquote {
   font-size: 25px;
   text-align: center;
   margin-top: -20px;
+  line-height: 2.3rem;
 }
 .center {
   text-align: center;
