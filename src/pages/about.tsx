@@ -96,17 +96,19 @@ export default function About() {
           <p>
             It is believed that this experimental way of formatting ideas, for
             example, traditional essays, can develop to be a readily easy way to
-            do a traditional medium differently.
+            do a traditional medium differently. I pause to suggest any degree
+            of 'betterness', but I am interested in difference.
           </p>
           <p>
-            Hence, it is pertinent to advance the idea of such a medium in any
-            way that is conducive to its wider discovery and adoption. I
+            Hence, it is pertinent to advance the idea of any such a medium in
+            any way that is conducive to its wider discovery and adoption. I
             personally refuse anyway, to be confined so far, in the landscape of
-            concept elaboration via boringly linear blog posts, videos and
-            explicit distinctions to art and the difficulties of developing
-            larger video games. I am afraid I also must include in my attack,
-            traditional books; for they too, fall into the realm of linear
-            conceptual explorations.
+            concept elaboration via boringly linear-scrolling blog posts,
+            cobbled together with other mixed media forms with little rhyme or
+            craft, or to be led to the difficulties of larger video game
+            development. I am afraid I also must include in my attack,
+            traditional books; for they too, fall into the realm of rather
+            linearly-interactive conceptual explorations.
           </p>
           <p>
             My point simply, is that I am sure there is a different, more
@@ -122,8 +124,7 @@ export default function About() {
 
           <p style={{ paddingBottom: 0, marginBottom: 0 }}>
             Distillation of your thoughts into writing for MetaSite will
-            probably be appreciated. You can leave feedback by navigating
-            upwards.
+            probably be appreciated ^.
           </p>
         </div>
       </motion.div>

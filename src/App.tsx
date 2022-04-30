@@ -9,7 +9,15 @@ import Timer from "./components/timer";
 
 export default function App() {
   console.log("Mate what d'you think you're doing back here. ");
-
+  //opens external links in new tab
+  var all_links = document.querySelectorAll("a");
+  for (var i = 0; i < all_links.length; i++) {
+    var a = all_links[i];
+    if (a.hostname != location.hostname) {
+      a.rel = "noopener";
+      a.target = "_blank";
+    }
+  }
   return (
     <>
       <main role="main" className="wrapper">
