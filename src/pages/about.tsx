@@ -66,44 +66,60 @@ export default function About() {
         </button>
         <div className="content-space">
           <h1 className="h1-space">About</h1>
-          <p className="sub-text">This About page is MetaSite meta. </p>
+          <p className="sub-text">Be mindful of bugs.</p>
           <h2 className="h2-body">Introduction</h2>
-          <p>Hello and warmest welcome to this cosy nook of the internet.</p>
-          <p>I am a website. Howdy.</p>
+          <p>Hello and warmest welcome to this cosy nook of the internet. </p>
           <p>
-            If you wish to take a little peek at my internals, feel free to{" "}
+            Essentially, this is an experimental website using basic pages and
+            text, but organised in a spatial manner, as if regressing somewhat
+            to a physical organisation of pieces of paper. Navigation is
+            currently mainly provided by arrows displayed on the sides of pages.
+          </p>
+          <p>
+            This version is a demo and it is unlikely that this project will
+            later be called 'MetaSite', for the practical purpose of avoiding
+            any positive or less flattering associations formed from the
+            developments from a certain similar-sounding large entity, of which
+            I personally am unsure exists right now?
+          </p>
+          <p>
+            Anyway, if you're interested, take a peek at my internals by{" "}
             <a href="https://www.thoughtco.com/get-inspect-element-tool-for-browser-756549">
-              inspect element
+              inspecting element
             </a>
-            , or waltz on over to my source files on{" "}
-            <a href="https://github.com/azengoose/MetaSite_V2">GitHub</a>. It's
-            like pornhub, but for code. If you're a minor, ignore that.
+            , or go ahead and give yourself the liberty of blithely copy-pasting
+            the code from this project's source files on{" "}
+            <a href="https://github.com/azengoose/MetaSite_V2">GitHub</a>{" "}
+            (software people: apologies in advance for the spaghetti).
           </p>
           <h2 className="h2-body"> Aims</h2>
           <p>
-            An aim of MetaSite is to provoke critical connections between people
-            and technology, or more generally, establish a holistic view of the
-            web through an experimental, reflective website about websites.
+            It is believed that this experimental way of formatting ideas, for
+            example, traditional essays, can develop to be a readily easy way to
+            do a traditional medium differently.
           </p>
           <p>
-            The Mission Question of MetaSite:
-            <em> What is the web?</em>
+            Hence, it is pertinent to advance the idea of such a medium in any
+            way that is conducive to its wider discovery and adoption. I
+            personally refuse anyway, to be confined so far, in the landscape of
+            concept elaboration via boringly linear blog posts, videos and
+            explicit distinctions to art and the difficulties of developing
+            larger video games. I am afraid I also must include in my attack,
+            traditional books; for they too, fall into the realm of linear
+            conceptual explorations.
           </p>
-          <p>This site is largely experimental. Site experiments include:</p>
+          <p>
+            My point simply, is that I am sure there is a different, more
+            compelling way to do ideas justice. Perhaps this is not the correct
+            course - for example, solutions to accessbility have not yet been
+            considered; but I'll be damned if I didn't try.
+          </p>
+          <p>Some other questions hoped to be explored in a near future:</p>
           <ol>
-            <li>Spatial navigation</li>
-            <li>Learning via questioning</li>
-            <li>Experiential reading and thinking</li>
+            <li>Learning via questioning; the larger role of questions.</li>
+            <li>A more graphical approach to writing.</li>
           </ol>
-          <p>
-            This site is currently a demo. Some of the pages located in this
-            demo illustrate the outline of potential pages currently in
-            development. Other ideas:{" "}
-          </p>
-          <ul>
-            <li>About About</li>
-            <li>Frequently Said Answers (FSA)</li>
-          </ul>
+
           <p style={{ paddingBottom: 0, marginBottom: 0 }}>
             Distillation of your thoughts into writing for MetaSite will
             probably be appreciated. You can leave feedback by navigating

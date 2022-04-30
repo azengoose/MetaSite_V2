@@ -14,7 +14,7 @@ export default function App() {
     <>
       <main role="main" className="wrapper">
         <div className="content">
-          <Progress />
+          {/* <Progress /> */}
 
           <motion.div
             whileHover={{ opacity: 1 }}
@@ -26,7 +26,7 @@ export default function App() {
               color: "black"
             }}
           >
-            <Timer />
+            {/* <Timer /> */}
           </motion.div>
 
           <Settings />

@@ -82,10 +82,11 @@ export default function Home() {
         <p className="sub-text">This is a demo.</p>
 
         <p style={{ textAlign: "center", marginTop: -15 }}>
-          Navigate by clicking the arrows situated on the sides.
+          More information upwards ^
         </p>
-        <p style={{ textAlign: "center", marginTop: -15 }}>
-          More information upwards.
+
+        <p style={{ textAlign: "center", marginBottom: 0 }}>
+          <em>Navigate by clicking the arrows situated on the sides.</em>
         </p>
 
         {/* <Randompage /> */}

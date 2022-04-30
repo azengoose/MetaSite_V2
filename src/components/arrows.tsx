@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 const variants = {
   hover: {
     scale: 1.5,
-    fill: "#3cd5dd"
+    fill: "#7202F5"
   },
-  tap: { scale: 0.9 }
+  tap: { scale: 1.1, fill: "#e641d6" }
 };
 
 // function RightClick() {

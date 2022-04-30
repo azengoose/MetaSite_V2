@@ -21,9 +21,9 @@ export default function Title() {
           <h1 className="title-heading"> &lt;MetaSite/&gt;</h1>
 
           <p className="sub-text title-sub">
-            MetaSite is an experimental, satirical and
+            MetaSite is an experimental, critical and
             <br />
-            critical website &ndash; about websites.
+            unnecessary website &ndash; about websites.
           </p>
 
           <Link className="btn--cool title-button" to="/">

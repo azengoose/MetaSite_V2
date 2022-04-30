@@ -39,26 +39,33 @@ export default function Critical() {
         exit="exit"
         transition={{ ease: "easeInOut", duration: 0.8 }}
       >
-        <h1>Criticality</h1>
-        <p className="sub-text">
-          The only thing I want for Christmas is...
-          <br></br>critical thinking.
-        </p>
-        <p>
-          Disappointed? Well, I want to hold off from publishing too much
-          unfiltered and poorly edited work. This page, among many others in
-          this ouevre, <em>excusi moi</em>, include:
-        </p>
-        <li>Bugs and Features</li>
-        <li>Institute of Internet</li>
-        <li>Tech Design and Decision</li>
-        <button
-          className="arrow-btn up"
-          onClick={() => handleClick("up")}
-          style={Disappear}
-        >
-          <UpArrow link="/" />
-        </button>
+        <div className="content-space">
+          <h1 className="h1-space">Criticality</h1>
+          <p className="sub-text">There is no answer without question.</p>
+          <h2 className="h2-body">Introduction</h2>
+          <p>
+            A common grievance of many in the distrust of education is the lack
+            of learning so-called 'critical thinking'. A critical thinker is
+            likely to be critical of others, perhaps so much so that their
+            criticality has been undermined by the...
+          </p>
+          <br></br>
+          <p className="sub-text">Yeah, a placeholder...</p>
+          <p>
+            A reminder that this is a demo. Other pages that may be branched off
+            from this page:
+          </p>
+          <li>Bugs and Features</li>
+          <li>Institute of Internet</li>
+          <li>Tech Design and Decision</li>
+          <button
+            className="arrow-btn up"
+            onClick={() => handleClick("up")}
+            style={Disappear}
+          >
+            <UpArrow link="/" />
+          </button>
+        </div>
       </motion.div>
     </>
   );

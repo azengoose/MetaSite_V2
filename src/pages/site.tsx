@@ -48,33 +48,40 @@ export default function Site() {
         <div className="content-space">
           <h1 className="h1-space">Websites</h1>
 
-          <p className="sub-text">
-            This is the obligatory page explicity about websites on the website
-            about websites.
-          </p>
+          <p className="sub-text">Page on websites, on the website website.</p>
           <h2 className="h2-body"> Introduction</h2>
           <p>
             The magical thing about code, software, to any type of engineering:
             the sky&rsquo;s <em>not</em> the limit.
           </p>
           <p>
-            Engineers, and in this case, website owners and designers, have the
-            privilege and responsibility to perform amazing and novel feats
-            within their moral bounds.
+            Engineers, and whatever-software engineers, in this particular era
+            (the early 21st century), have the privilege and responsibility to
+            perform amazing and novel feats within their moral bounds.
           </p>
           <h2 className="h2-body"> Website Taxonomy </h2>
           <p>
-            I&rsquo;ll spare you an awful attempt at categorising the entirety
-            of human created content, but the functions of sites can be a more
-            manageable affair.
+            It is perhaps notable, that the state of 'websites' or apps, as the
+            primary medium for popular user-interface, has been under scrutiny
+            in regards to other Web X.0 technologies since, most prominently, at
+            the dawn of the second decade of this century.
           </p>
           <p>
-            Simply, websites can be separated via content (dynamic/changing,
+            Nevertheless, if not for a longevity that stretches the length of an
+            average business man's propensity for philosophy, the following
+            information can yet be handy as historical interest. Whilst an
+            extensive and comprehensive attempt at organising the corpus of
+            human created content is much needed, that will not be attempted.
+            One example categorisation of site functions is simply provided
+            here.
+          </p>
+          <p>
+            Websites can be characterised via content (dynamic/changing,
             user-created) and function (generally unchanging,
             developer-created).
           </p>
 
-          <p>Current website functions include:</p>
+          <p>Website functions include:</p>
           <ol>
             <li>
               Information, documentation, news, opinion, entertainment, art,
@@ -116,19 +123,16 @@ export default function Site() {
           <p>
             For many of the social, dynamically interactive sites, the function
             of sites, although shaped by one or many creators in an open-source
-            project, is in fact moulded by users.
+            project, is also highly variable to the uses pushed by users.
           </p>
-          <p>
-            And site functions aren&rsquo;t usually siloed so simply as
-            illustrated above. But it&rsquo;s worth considering the primary
-            functions of sites whether as creators or users of sites.
-          </p>
-          <h2 className="h2-body">Practical Uses</h2>
+          <h2 className="h2-body">
+            Some Practical Uses for the Practically Inclined
+          </h2>
           <ol>
             <li>
-              Businesses. Websites for businesses or companies in the mid-early
-              21st century aren&rsquo;t exactly something to brag about, but
-              it&rsquo;s a mistake to not have.
+              Businesses. Websites for businesses or companies aren&rsquo;t
+              exactly something to brag about, but it&rsquo;s a mistake to not
+              have.
             </li>
             <li>
               E-commerce, selling digital products, merchandise, physical goods;
@@ -136,8 +140,8 @@ export default function Site() {
             </li>
             <li>
               Your resum&eacute;. Websites are your personal resume; that, or a
-              LinkedIn profile &ndash; this depends on whether recruiters are
-              more vested in your skills, visible work, portfolio, ethic or
+              LinkedIn profile probably &ndash; depends on whether recruiters
+              are more vested in your skills, visible work, portfolio, ethic or
               experiences.
             </li>
             <li>

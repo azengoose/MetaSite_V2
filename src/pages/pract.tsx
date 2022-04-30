@@ -49,13 +49,28 @@ export default function Practical() {
         </button>
         <div className="content-space">
           <h1 className="h1-space">Practicality</h1>
-          <p className="sub-text">How is this practical?</p>
+          <p className="sub-text">
+            The essence of productivity must be defined.
+          </p>
+          <h2 className="h2-body"> Introduction</h2>
           <p>
-            Merry Christmas. This page is an illustration of how pages might
-            connect in this navigation system. It is also a placeholder, a work
-            in progress, a fledgling chick either on the cusp of maturing into a
-            magnificently feathered vertebrate ...or on the cusp of falling off
-            a very high cliff. Some current ideas in movement:
+            It is certain that we must do that which is practical. As a matter
+            of practicality, the passage of life compels us so. What is more
+            contentious, are the levels of practicality and factors that we may
+            consider as we navigate the decisions to be made in relation to
+            their practicalities.
+          </p>
+          <p>
+            How one conceives of, and makes peace with matters of practicality
+            is in large part determined by their circumstances. Practicality,
+            perhaps epitomised in some respect by the late Benjamin Franklin in
+            his little adventures founding the United States...
+          </p>
+          <br></br>
+          <p className="sub-text">Look, a placeholder.</p>
+          <p>
+            A reminder that this is a demo. Other pages that may be branched off
+            from this page:
           </p>
           <li>Levels of Practicality</li>
           <li>Discomfort and Failure</li>
@@ -63,15 +78,15 @@ export default function Practical() {
         </div>
       </motion.div>
 
-      <div className="arrow-footer">
-        <button
-          className="arrow-btn down"
-          onClick={() => handleClick("down")}
-          style={Disappear}
-        >
-          <DownArrow link="/m" />
-        </button>
-      </div>
+      {/* <div className="arrow-footer"> */}
+      <button
+        className="arrow-btn down"
+        onClick={() => handleClick("down")}
+        style={Disappear}
+      >
+        <DownArrow link="/m" />
+      </button>
+      {/* </div> */}
     </>
   );
 }

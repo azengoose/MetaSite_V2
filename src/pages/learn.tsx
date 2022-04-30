@@ -41,10 +41,11 @@ export default function Learn() {
         exit="exit"
         transition={{ ease: "easeInOut", duration: 0.8 }}
       >
-        <h2 className="h2-body">Secret survey page</h2>
+        <h2 className="h2-body">Not So Secret Survey Page</h2>
         <p>
-          If you would be the kindest and drop some of your best feedback,
-          you'll be a cool kid.
+          Roughly 2 minutes to half an hour, depending on if you're the type to
+          think for 5 minutes, write a response, doubt yourself, rewrite,
+          rewrite, then rewrite before submitting.
         </p>
         <Survey />
       </motion.div>

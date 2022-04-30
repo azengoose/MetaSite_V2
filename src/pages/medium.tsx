@@ -55,12 +55,16 @@ export default function Medium() {
         </button>
         <div className="content-space">
           <h1 className="h1-space">Media</h1>
-          <p className="sub-text">Media is the gateway of expression.</p>
+          <p className="sub-text">The gateway of expression.</p>
+          <h2 className="h2-body"> Introduction </h2>
           <p>
-            Technology, and the mediums that govern our world, such as websites,
-            video, music and writing, inevitably govern our thoughts, how we
-            work, live and belong. Media governs us.&nbsp;
+            Technology, and the mediums that govern our world, which may be
+            expansive as websites, video, writing, to art, sculpture, music,
+            food and all artifacts of culture and existence, govern and reflect
+            our thoughts; how we work, live and belong. It is the means by which
+            we may belong to existence via our expression.&nbsp;
           </p>
+          <h2 className="h2-body">Limits</h2>
           <p>
             For one, writing has, as much of its unlimited breadth, flair and
             content, an unlimited limit.
