@@ -94,3 +94,20 @@
     margin-top: 1px;
   }
 }
+@media screen and (max-width: 630px) {
+  .close-btn {
+    margin: 0 0;
+  }
+}
+
+@media screen and (max-height: 630px) {
+  .settings-timer {
+    display: none;
+  }
+  .close-btn {
+    margin: 0 0;
+  }
+  .modal {
+    height: min(85%, 250px);
+  }
+}

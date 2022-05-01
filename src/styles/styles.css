@@ -136,11 +136,29 @@ h1 {
   line-height: 105%;
   text-align: center;
 }
+
 @media (max-width: 600px) {
   .home-title {
     font-size: 3em;
   }
+  h1 {
+    font-size: 4rem;
+    padding: 20px 0;
+  }
+  p.sub-text {
+    font-size: 20px;
+    line-height: 1.6rem;
+  }
 }
+@media (max-width: 400px) {
+  .home-title {
+    font-size: 2.4em;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
 .h1-space {
   margin-top: 20%;
 }

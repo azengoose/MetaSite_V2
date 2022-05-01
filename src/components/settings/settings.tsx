@@ -107,9 +107,11 @@ export default function Settings() {
           textAlign: "center"
         }}
       >
+        <div className="settings-timer">
         <p>Time elapsed on MetaSite:</p>
         <div style={{ color: "#f1476a" }}>
           <Timer />
+        </div>
         </div>
       </div>
       <div>
