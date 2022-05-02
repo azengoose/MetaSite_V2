@@ -1,5 +1,7 @@
 # MetaSite Demo
 
+This is an experimental branch.
+
 Has no affiliation with Meta.
 
 MetaSite is a site that tries to be meta. Not too meta though – just a little bit.
